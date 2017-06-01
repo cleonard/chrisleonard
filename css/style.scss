@@ -1,0 +1,274 @@
+---
+---
+
+$breakpoint: 800px;
+
+$aluminum: #4d5259;
+$offwhite: #e2d79f;
+$red: #8c3232;
+$brown: #69570e;
+$green: #347f79;
+$blue: #33537f;
+$background: #f6f6f7;
+$gold: #d2af1f;
+
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  background: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  
+/* Main styles */
+  
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+img, object, embed, video, iframe {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  border-top: 4px solid $red;
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.wrapper {
+  padding: 0 1.5em;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  @media screen and (min-width: $breakpoint) {
+    margin: 0 auto;
+    max-width: 1040px;
+  }
+}
+
+/* Header and Intro */
+
+header#main {
+  line-height: 1.333;
+  padding: 2.369em 0;
+  text-transform: uppercase;
+  h1 {
+    color: lighten($aluminum, 12%);
+    font-size: 2.369em;
+    font-weight: 300;
+    @media screen and (min-width: $breakpoint) {
+      font-size: 3.157em;
+    }
+  }
+  h2 {
+    color: $red;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+
+#introduction {
+  padding-bottom: 2.369em;
+  p {
+    font-size: 1.333em;
+    line-height: 1.618;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding-bottom: 3em;
+}
+
+/* Portfolio */
+
+section#portfolio {
+  margin: 1.5em 0;
+}
+
+article.site {
+  padding: 1.5em 0;
+  a {
+    color: mix($offwhite, $background);
+    border-color: mix($offwhite, $background);
+    text-decoration: none;
+  }
+  .logo {
+    margin: 0 auto;
+    padding-bottom: 1em;
+    max-width: 200px;
+  }
+  .description {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 1.618em;
+    margin: .75em -0.5em -0.5em;
+    p {
+      line-height: 1.618;
+    }
+    h2 {
+      font-size: 1.333em;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: .422em;
+      @media screen and (min-width: $breakpoint) {
+        font-size: 1.777em;
+      }
+    }
+  }
+  .roles {
+    font-size: .85em;
+    margin: 1em 0;
+    h3, ul {
+      display: inline-block;
+    }
+    li {
+      display: inline;
+      list-style: disc;
+      padding-left: .75em;
+    }
+  }
+  @media screen and (min-width: $breakpoint) {
+    padding: 3em 0;
+    .logo {
+      float: left;
+      padding: 0;
+      width: 22%;
+    }
+    .description {
+      float: right;
+      margin: -0.5em;
+      width: 76%;
+    }
+  }
+}
+
+#tdsa {
+  background-color: #513f17;
+  background-image: url(/img/tdsa_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#vii_corps {
+  background-color: #3e3934;
+  background-image: url(/img/vii_corps_dsva_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#it_caucus {
+  background-color: #19315d;
+  background-image: url(/img/it_caucus_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#wiggys {
+  background-color: #A41D3D;
+  background-image: url(/img/wiggys_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Button links */
+.action {
+  margin: 1em 0 0;
+}
+
+a.button {
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: .75em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.email_me {
+  margin: 1em 0 0;
+  a.button {
+    &:link, &:visited, &:hover, &:active {
+      color: $aluminum;
+      border-color: $aluminum;
+    }
+  }
+}
