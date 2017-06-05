@@ -95,9 +95,18 @@ img {
   max-width: 100%;
 }
 
+a {
+  &:link, &:visited {
+    color: $red;
+  }
+  &:hover, &:active {
+    color: lighten($red, 15%);
+  }
+}
+
 body {
   border-top: 4px solid $red;
-  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
   font-size: 100%;
   font-weight: 400;
 }
@@ -124,15 +133,11 @@ header#main {
   h1 {
     color: lighten($aluminum, 12%);
     font-size: 2.369em;
-    font-weight: 300;
-    @media screen and (min-width: $breakpoint) {
-      font-size: 3.157em;
-    }
   }
   h2 {
     color: $red;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -157,6 +162,8 @@ section#portfolio {
 }
 
 article.site {
+  margin: 1.5em auto;
+  max-width: 992px;
   padding: 1.5em 0;
   a {
     color: mix($offwhite, $background);
@@ -258,7 +265,7 @@ a.button {
   display: inline-block;
   font-size: 0.85em;
   font-weight: 500;
-  padding: .75em;
+  padding: .75em 1.777em;
   text-decoration: none;
   text-transform: uppercase;
 }
